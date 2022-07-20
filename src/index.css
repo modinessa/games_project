@@ -5,7 +5,9 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background: gray;
 }
+
 
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -19,6 +21,7 @@ code {
 }
 
 h1 {
+	color: white;
 	margin: 0;
 }
 
@@ -29,12 +32,14 @@ h1 {
 }
 
 .tile {
+	border: solid 2px gray;
+	color: white;
 	position: absolute;
 	list-style: none;
 	background: pink;
 	display: grid;
 	place-items: center;
-	font-size: 20px;
+	font-size: 30px;
 }
 
 .hole {

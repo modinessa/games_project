@@ -52,7 +52,7 @@ export function shuffle(tiles) {
 }
 
 export function canSwap(src, dest, GRID_SIZE) {
-	const { row: srcRow, col: srcCol } = getMatrixPosition(scr, GRID_SIZE);
+	const { row: srcRow, col: srcCol } = getMatrixPosition(src, GRID_SIZE);
 	const { row: destRow, col: destCol } = getMatrixPosition(dest, GRID_SIZE);
 	return Math.abs(srcRow - destRow) + Math.abs(srcCol - destCol) === 1;
 }
