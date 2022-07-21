@@ -57,6 +57,12 @@ export function canSwap(src, dest, GRID_SIZE) {
 	return Math.abs(srcRow - destRow) + Math.abs(srcCol - destCol) === 1;
 }
 
+export function swap(tiles, src, dest) {
+	const tilesResult = [...tiles];
+	[tilesResult[src], tilesResult[dest]] = [tilesResult[dest], tilesResult[src]];
+	return tilesResult;
+}
+
 export function updateURLParameter(url, param, paramVal) {
 	var newAdditionalURL = "";
 	var tempArray = url.split("?");

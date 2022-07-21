@@ -26,13 +26,15 @@ h1 {
 }
 
 .board {
+	background-color: white;
 	position: relative;
 	padding: 0;
 	margin: 0 auto;
 }
 
 .tile {
-	border: solid 2px gray;
+	box-sizing: border-box;
+	border: solid 1px white;
 	color: white;
 	position: absolute;
 	list-style: none;
@@ -40,6 +42,7 @@ h1 {
 	display: grid;
 	place-items: center;
 	font-size: 30px;
+	font-weight: 700;
 }
 
 .hole {
@@ -47,5 +50,18 @@ h1 {
 }
 
 button {
+	height: 80px;
+	width: 200px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	font-size: 24px;
+	font-weight: 700;
+	color: gray;
 	display: block;
+	border: pink 2px solid;
+	background-color: white;
+}
+
+button:hover {
+	font-size: 30px;
 }
